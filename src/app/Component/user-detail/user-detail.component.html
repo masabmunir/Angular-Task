@@ -1,0 +1,26 @@
+<div *ngIf="user" class="user-detail-container text-center mt-4">
+  <h2 class="mb-4">User Details</h2>
+
+  <!-- Bootstrap Card to display user details -->
+  <div class="card mx-auto shadow-sm" style="width: 50%; border-radius: 10px;">
+    <div class="card-body">
+      <table class="table table-bordered table-hover">
+        <thead class="bg-primary text-white">
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ user.first_name }}</td>
+            <td>{{ user.last_name }}</td>
+            <td>{{ user.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-primary mt-3" (click)="navigateToList()">Back to List</button>
+    </div>
+  </div>
+</div>

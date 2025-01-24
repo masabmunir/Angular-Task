@@ -1,0 +1,47 @@
+.error {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .user-container {
+    margin:5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .user-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    width: 300px;
+  
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .user-info {
+    h3 {
+      font-size: 16px;
+      margin: 0;
+    }
+  
+    p {
+      font-size: 14px;
+      color: #757575;
+      margin: 4px 0 0;
+    }
+  }
+  
